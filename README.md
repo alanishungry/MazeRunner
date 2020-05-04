@@ -1,8 +1,9 @@
-###Summary
+### Summary
+
 Finds shortest path on a grid between a start and end point. Grid is rectangular and contains 0s and 1s, where 0 
 represents a valid space we can walk over and 1 represents a wall we cannot walk onto.
 
-###How to run
+### How to run
 Just run the main method in MazeRunnerTestMain. You can create your own grid to test that it works.
 The code now will print this, showing you the path marked with 2s:
 ```
@@ -29,11 +30,11 @@ intersection. This guarantees us to find one of the shortest paths between start
 
 ### Runtime / Space Analysis
 
-####Runtime Analysis
+#### Runtime Analysis
 The runtime is the same as normal BFS. So, the runtime is O(n*m) where n and m are the grid dimensions. 
 This is because worst case we will check all grid spaces.
 
-####Space Analysis
+#### Space Analysis
 Space is also O(n*m) because we remember all the paths we took during the BFS. We can imagine a worst case scenario
 where our BFS contains all possible spaces in the grid.
 
@@ -48,6 +49,6 @@ Now, imagine a BFS from start and BFS from end. These will each produce their ow
 circle's area will be pi * r^2. Total area will be 2 * pi * r^2. This is half the area of the circle for normal BFS from 
 start only.
 
-###Other considerations:
+### Other considerations:
 - A* search could find us a good enough solution, but might tell us there is no path, when there is one
 - Single BFS is much simpler to write, and maybe better to tradeoff this less complexity for a little more space usage
